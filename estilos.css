@@ -1,0 +1,57 @@
+  .entrar{
+	  display: none;
+  }
+
+  .ocultar{
+	  display: none;
+  }
+
+  .tabla{
+	  display:none;
+  }
+
+  .ocultarBoton{
+	  display:none;
+  }
+
+  .masValores{
+    display:none;
+  }
+
+  body {
+    background: #e0f2f1
+}
+
+.resaltar{
+  background-color: lightgray;
+  color; black;
+}
+
+.ocultarRadio{
+  display:none;
+}
+
+.ocultarMarcaModelo{
+  display:none;
+}
+
+.ocultarEdad{
+  display:none;
+}
+
+.botonSelects{
+  display:none;
+}
+
+.noVeo{
+  display:none;
+}
+
+.mostrarEste{
+  display:none;
+}
+
+.guardaMyM{
+  display:none;
+}
+

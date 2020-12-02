@@ -1,0 +1,140 @@
+[
+    {
+        "valores": "$ 70000 a $ 99999",
+        "cobertura1": "$ 2000",
+        "cobertura2": "$ 2500",
+        "cobertura3": "$ 3000"
+    },
+    {
+        "valores": "$ 100000 a $ 129999",
+        "cobertura1": "$ 2500",
+        "cobertura2": "$ 3000",
+        "cobertura3": "$ 3500"
+    },
+    {
+        "valores": "$ 130000 a $ 159999",
+        "cobertura1": "$ 3000",
+        "cobertura2": "$ 3500",
+        "cobertura3": "$ 4000"
+    },
+    {
+        "valores": "$ 160000 a $ 189999",
+        "cobertura1": "$ 3500",
+        "cobertura2": "$ 4000",
+        "cobertura3": "$ 4500"
+    },
+    {
+        "valores": "$ 190000 a $ 219999",
+        "cobertura1": "$ 4000",
+        "cobertura2": "$ 4500",
+        "cobertura3": "$ 5000"
+    },
+    {
+        "valores": "$ 220000 a $ 249999",
+        "cobertura1": "$ 4500",
+        "cobertura2": "$ 5000",
+        "cobertura3": "$ 5500"
+    },
+    {
+        "valores": "$ 250000 a $ 279999",
+        "cobertura1": "$ 5000",
+        "cobertura2": "$ 5500",
+        "cobertura3": "$ 6000"
+    },
+    {
+        "valores": "$ 280000 a $ 309999",
+        "cobertura1": "$ 5500",
+        "cobertura2": "$ 6000",
+        "cobertura3": "$ 6500"
+    },
+    {
+        "valores": "$ 310000 a $ 339999",
+        "cobertura1": "$ 6000",
+        "cobertura2": "$ 6500",
+        "cobertura3": "$ 7000"
+    },
+    {
+        "valores": "$ 340000 a $ 369999",
+        "cobertura1": "$ 6500",
+        "cobertura2": "$ 7000",
+        "cobertura3": "$ 7500"
+    },
+    {
+        "valores": "$ 370000 a $ 399999",
+        "cobertura1": "$ 7000",
+        "cobertura2": "$ 7500",
+        "cobertura3": "$ 8000"
+    },
+    {
+        "valores": "$ 400000 a $ 449999",
+        "cobertura1": "$ 8000",
+        "cobertura2": "$ 9000",
+        "cobertura3": "$ 9500"
+    },
+    {
+        "valores": "$ 450000 a $ 499999",
+        "cobertura1": "$ 9000",
+        "cobertura2": "$ 10000",
+        "cobertura3": "$ 10500"
+    },
+    {
+        "valores": "$ 500000 a $ 549999",
+        "cobertura1": "$ 10000",
+        "cobertura2": "$ 11000",
+        "cobertura3": "$ 11500"
+    },
+    {
+        "valores": "$ 550000 a $ 599999",
+        "cobertura1": "$ 11000",
+        "cobertura2": "$ 12000",
+        "cobertura3": "$ 12500"
+    },
+    {
+        "valores": "$ 600000 a $ 649999",
+        "cobertura1": "$ 13000",
+        "cobertura2": "$ 14500",
+        "cobertura3": "$ 15000"
+    },
+    {
+        "valores": "$ 650000 a $ 699999",
+        "cobertura1": "$ 14500",
+        "cobertura2": "$ 16000",
+        "cobertura3": "$ 17000"
+    },
+    {
+        "valores": "$ 700000 a $ 749999",
+        "cobertura1": "$ 16000",
+        "cobertura2": "$ 17500",
+        "cobertura3": "$ 18500"
+    },
+    {
+        "valores": "$ 750000 a $ 799999",
+        "cobertura1": "$ 17500",
+        "cobertura2": "$ 19000",
+        "cobertura3": "$ 19000"
+    },
+    {
+        "valores": "$ 800000 a $ 849999",
+        "cobertura1": "$ 19000",
+        "cobertura2": "$ 20500",
+        "cobertura3": "$ 21500"
+    },
+    {
+        "valores": "$ 850000 a $ 899999",
+        "cobertura1": "$ 20500",
+        "cobertura2": "$ 22000",
+        "cobertura3": "$ 23000"
+    },
+    {
+        "valores": "$ 900000 a $ 949999",
+        "cobertura1": "$ 22000",
+        "cobertura2": "$ 23500",
+        "cobertura3": "$ 24500"
+    },
+    {
+        "valores": "$ 950000 a $ 999999",
+        "cobertura1": "$ 23500",
+        "cobertura2": "$ 24000",
+        "cobertura3": "$ 25000"
+    }
+]

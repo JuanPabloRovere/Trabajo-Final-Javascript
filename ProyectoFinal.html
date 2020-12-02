@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final</title>
+    <script defer src=javascript.js></script>
+    <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">    
+</head>
+
+<!-- Titulo de la pagina -->
+
+<body id="body">
+  <div class="section container">
+    <div class="row">
+       <div class="col s12">
+           <div class="card green teal lighten-2">
+               <div class="card-content white-text">
+<section class="input-field s12"">
+    <article>
+      <h1  id="articulo">Cotiza tu seguro automotriz</h1>
+    </article>
+</section>
+</div></div></div>
+
+
+<!-- Comienzo del formulario-->
+
+
+<form class="col s12" id="formulariou">
+   <div class="row card-panel">
+
+<div class="ocultarTodo" id="ocultarTodo">
+
+   <!-- Titulo de Seccion -->
+
+  <div class="col s12">
+    <div class="card green lighten-3">
+      <div class="card-content white-text">
+
+    <h3 class="input-field s12">Vehículo</h3>
+
+  </div></div></div>
+
+
+
+   <!-- El select de cada Marca -->
+  <div class="ocultarEstos" id="ocultarEstos">
+
+    <div class="input-field col s6">    
+      <select id="marca">
+        <option value="">- Seleccionar -</option>
+      </select>
+    <label for="marca">Marca:</label>
+    </div>
+  
+
+   <!-- El Select de los modelos -->
+
+
+    <div class="input-field col s6">
+      <select id="modelo">
+        <option value="">- Seleccionar -</option>
+      </select>
+    <label for="modelo">Modelo:</label>
+    </div>
+    </div>
+
+ <!-- Guardo info de los selects -->
+    
+ <input type="text" id="guardaMyM" class="guardaMyM" readonly>
+
+ <!-- Boton para volver a ver los Selects  -->
+
+ <button id="botonSelects" class="btn , botonSelects">Volver a ver Marcas y Modelos</button>
+
+  <!-- Boton para volver ingresar Modelo y Marca que no este en la lista  -->
+
+  <button id="botonNoVeo" class="btn , botonNoVeo">No encuentro mi Marca y Modelo</button>
+  
+
+   
+ <!-- Para que ingrese su modelo y marca en caso de que no estuviesen en el select -->
+    <br></br>
+<div class="noVeo" id="noVeo">
+
+    <div class="input-field col s6">
+      <label for="otraMarca" class="otraMarca">No encuentra su marca? Cual es?</label>
+      <input type="text" placeholder="Ingrese marca" maxlength="20" name="otraMarca" id="otraMarca">  
+    </div>
+
+    <div class="input-field col s6">
+      <label for="otroModelo" class="otroModelo">No encuentra su modelo? Cual es?</label>
+      <input type="text" maxlength="20" name="otroModelo" id="otroModelo">
+    </div>
+
+
+</div>
+
+
+    <!-- Solo deje esto para guardar la marca y Modelo -->
+    <div class="ocultarMarcaModelo">
+    <label for="otroTexto" class="otroTexto">Su auto y Modelo</label>
+    <input type="text" id="copiaTexto" placeholder="Su auto y modelo" readonly/>
+    </div>
+
+
+     <!-- Ingrese Patente de su Auto -->
+
+  <div class="input-field col s6">
+    <label for="patente" class="patente">Patente</label>
+    <input type="text" placeholder="AAA 111 AA" maxlength="10" name="patente" id="patente">
+  </div>
+
+
+     <!-- Año del auto -->
+
+  <div class="input-field col s6">
+    <label for="copi" class="año"></label>
+    <select name="Año del auto" id="copi" onchange="copiar()">
+        <option disabled selected>Año del auto</option>
+        <option>2020</option>
+        <option>2019</option>
+        <option>2018</option>
+        <option>2017</option>
+        <option>2016</option>
+        <option>2015</option>
+        <option>2014</option>
+        <option>2013</option>
+        <option>2012</option>
+        <option>2011</option>
+        <option>2010</option>
+        <option>2009</option>
+        <option>2008</option>
+        <option>2007</option>
+        <option>2006</option>
+        <option>2005</option>
+        <option>2004</option> 
+        <option>2003</option>
+        <option>2002</option>
+        <option>2001</option>
+        <option>2000</option>
+        <option>1999 o mas</option>
+    </select>
+    <input class="ocultar" type="text" id="copia1" readonly/> 
+  </div>
+  
+
+ <!-- ¿Quién es el dueño del Vehículo? -->
+      
+      <div class="radio">
+        <h6 class="duenio">¿Quién es el dueño del Vehículo?</h6>
+      </div>
+
+     
+    <label>
+      <input type="radio" name="boton" value="a" class="duenio2" id="duenio2">
+      <span>Yo soy el dueño</span>
+    </label>
+
+    <label>
+      <input type="radio" name="boton" value="b" class="duenio3" id="duenio3">
+      <span>Otra persona</span>
+    </label>
+
+    <label>
+      <input type="radio" name="boton" value="c" class="duenio4" id="duenio4">
+    <span>Es de la empresa</span>
+    </label>
+
+     <br></br>
+
+
+   <!-- Titulo de Seccion -->
+
+     <div class="col s12">
+      <div class="card green lighten-3">
+        <div class="card-content white-text">
+    <h3 class="informacion">Informacion personal</h3>
+    </div></div></div>
+
+
+     <!-- Nombre y Apellido -->
+
+    <div class="input-field col s6">
+      <label for="nombre">Ingrese su nombre:</label>
+      <input type="text" placeholder="Escribe tu nombre" name="nombre" id="nombre">
+    </div>
+
+    <div class="input-field col s6">
+      <label for="apellido">Ingrese su apellido:</label>
+      <input type="text" name="apellido" id="apellido">
+    </div>
+
+     <!-- Genero -->
+
+    <label for="genero" class="genero">Ingrese su genero:</label>
+      <select name="genero" id="generos" class="generos">
+        <option disabled selected></option>
+      <option>Masculino</option>
+      <option>Femenino</option>
+      <option>Prefiero no responder</option>
+    </select>
+
+     <!-- Fecha de nacimiento -->
+    <br></br>
+
+    <div class="input-field col s12">
+      <input type="date" name="nacimiento" id="nacimiento">
+      <label for="nacimiento">Ingrese su fecha de nacimiento:</label>  
+    </div>
+
+     <!-- Solo deje esto para guardar la edad -->
+    <div class="ocultarEdad">
+      <input type="number" id="edad" readonly=" " placeholder="Su edad es:"/>
+      <label for="edad"></label>
+    </div>
+   
+
+   <!-- Email -->
+   <div class="input-field col s12">
+   <label for="email">Ingrese su Email:</label>
+   <input type="email" placeholder="Escribe tu Email" class="validate" name="email" id="email"> 
+   <span class="helper-text" data-error="email incorrecto" data-success="email correcto"></span> 
+  </div>  
+
+
+    <!-- Medio de contacto -->
+
+     
+    <h6 class="contacto">Medio de contacto</h6>
+
+    <label>
+      <input type="radio" name="boton1" value="a1" class="contacto1" id="contacto1"> 
+      <span>Whatsapp</span>
+    </label>
+
+    <label>
+      <input type="radio" name="boton1" value="b1" class="contacto2" id="contacto2">
+      <span>Telefono</span>
+    </label>
+
+    <label>
+      <input type="radio" name="boton1" value="c1" class="contacto3" id="contacto3"> 
+      <span>No me interesa</span>
+    </label>
+
+
+    <!-- Telefono -->
+      <br></br>
+
+      <p class="ocultarEste" id="ocultarEste">
+      <label for="tel">Ingrese su numero</label>
+      <input type="tel" placeholder="Ingrese su numero" maxlength="10" name="tel" id="tel">
+      </p>
+      <br></br>
+
+
+
+ <!-- Titulo de Seccion -->
+
+    <div class="col s12">
+      <div class="card green lighten-3">
+        <div class="card-content white-text">
+     <h3 class="elSeguro">Cotización</h3>
+     </div></div></div>
+     <br><br>
+
+   <!-- Boton que hace aparecer la tabla con los valores -->
+
+   <button id="botonn" class="btn">Consultar valores de cada cobertura</button>
+
+   <!-- Al seleccionar un valor, desaparecen los demas. Con este boton los valores vuelven a aparecer -->
+
+   <button id="masValores" class="masValores , btn">Volver a ver los valores de cobertura</button>
+
+    <!--Con este boton desaparece la tabla de valores -->   
+  
+   <button id="ocultarBoton" class="ocultarBoton , btn">Cerrar valores de coberturas</button>
+
+
+  <!-- Tabla con los valores de cada cobertura -->
+
+     <table class="tabla" id="tabla">
+     <thead>
+       <tr>
+         <th>Valor de su auto</th>
+         <th>Cobertura parcial</th>
+         <th>Cobertura total</th>
+         <th>Cobertura total + servicios</th>
+       </tr>
+     </thead>
+
+      <tbody id="res">       
+     </tbody>
+     </table>
+     <br>
+   <!-- Div para que la seleccion de cada cobertura aparezca en el momento que uno selecciona un valor en la tabla -->
+
+  <div class="ocultarRadio">
+  
+   <h6 class="contacto">Seleccione su cobertura</h6>
+   <label>
+     <input type="radio" name="radioCobertura" value="a1" class="radioCobertura" id="radioCobertura"> 
+     <span id="aaa">Cobertura parcial</span>
+   </label>
+
+  <label>
+    <input type="radio" name="radioCobertura" value="b1" class="radioCobertura2" id="radioCobertura2">
+    <span id="bbb">Cobertura total</span>
+  </label>
+
+  <label>
+    <input type="radio" name="radioCobertura" value="c1" class="radioCobertura3" id="radioCobertura3"> 
+    <span id="ccc">Cobertura total + servicios</span>
+  </label>
+  </div>
+  <br><br>
+
+   <!-- Boton para chequear que el formulario este todo lleno -->
+
+  <p>
+    <label>
+      <input type="checkbox" class="filled-in" id="chequear"/>
+      <span>Chequear que todos los campos hayan sido rellenados</span>
+    </label>
+  </p>
+
+  <!-- Boton para enviar el formulario -->
+
+  <input type="submit" id="enviarFormulario" class= "btn" value="Enviar formulario"> 
+
+</div>
+   
+<div class="mostrarEste" id="mostrarEste">
+  <h5 id="confirmar">A ver esto</h5>
+</div>
+</form>
+</div>
+
+
+
+<link rel="stylesheet" href="estilos.css">
+<script defer src="db.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</div>
+</div>
+</body>
+</html>
